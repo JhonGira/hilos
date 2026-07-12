@@ -63,7 +63,7 @@ public static void ImprimirUbicacion(String[] ubicacion){
 			ImprimirUbicacion(hilos[i].descargas);
 		}
 		
-		System.out.print("\nDocumentoss: ");
+		System.out.print("\nDocumentos: ");
 		for (int i = 0;i < cantidad;i++) {
 			ImprimirUbicacion(hilos[i].documentos);
 		}
