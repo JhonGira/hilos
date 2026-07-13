@@ -35,6 +35,8 @@ public class Descargar extends Thread {
 
     public void run(){
 
+        System.out.println("Ejecutando " + getName());
+
         Scanner sc = new Scanner(System.in);
 
           System.out.print("Escriba el tipo de archivo que quiere descargar: ");

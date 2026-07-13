@@ -15,14 +15,15 @@ public class Main{
 	public static void main(String[] args) throws InterruptedException {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Escriba la cantidad de hilos desea agregar: ");
+		System.out.print("Escriba la cantidad de descargas que  desea agregar: ");
 		CantidadHilos.cantidad = sc.nextInt();
 
 		Descargar[] des = new Descargar[CantidadHilos.cantidad];
 		
 		
 		for (int i = 0; i < CantidadHilos.cantidad; i++){
-			des[i] = new Descargar();	
+			des[i] = new Descargar();
+			des[i].setName("Descarga-" + (i + 1));	
 			des[i].start();
 			des[i].join();
 		}
